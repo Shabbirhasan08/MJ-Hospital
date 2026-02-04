@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CityCare Medical Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #0a4fb3;
+            --secondary: #f4f8ff;
+            --accent: #198754;
+            --text-dark: #1f2933;
+            --text-light: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            font-size: 14px;
+            background-color: #083c8c;
+        }
+
+        .top-bar span {
+            margin-right: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: var(--secondary);
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: var(--text-light);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 70px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h3 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .service-card h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .doctors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .doctor-card {
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #ffffff;
+            padding: 30px 40px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        footer h4 {
+            margin-top: 0;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar">
+        <div>
+            <span>📞 +1 234 567 890</span>
+            <span>✉ info@citycaremedical.com</span>
+        </div>
+        <div>
+            Emergency Services Available 24/7
+        </div>
+    </div>
+
+    <nav>
+        <h1>CityCare Medical Center</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Advanced Healthcare You Can Trust</h2>
+    <p>Delivering compassionate, patient-centered care with modern medical excellence.</p>
+    <a href="#contact" class="btn">Book an Appointment</a>
+</section>
+
+<section id="about" class="section">
+    <h3>About CityCare</h3>
+    <p class="about">
+        CityCare Medical Center is a leading multi-specialty hospital offering
+        world-class healthcare services supported by advanced medical technology
+        and a team of highly qualified professionals.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="services">
+        <div class="service-card">
+            <h4>Emergency & Trauma Care</h4>
+            <p>Immediate medical attention with fully equipped emergency units.</p>
+        </div>
+        <div class="service-card">
+            <h4>Outpatient Services</h4>
+            <p>Specialist consultations, diagnostics, and preventive care.</p>
+        </div>
+        <div class="service-card">
+            <h4>Inpatient Facilities</h4>
+            <p>Comfortable rooms with continuous monitoring and care.</p>
+        </div>
+        <div class="service-card">
+            <h4>Diagnostic Services</h4>
+            <p>Advanced lab testing and imaging facilities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="doctors" class="section">
+    <h3>Our Medical Experts</h3>
+    <div class="doctors">
+        <div class="doctor-card">
+            <h4>Dr. John Smith</h4>
+            <p>Cardiology</p>
+        </div>
+        <div class="doctor-card">
+            <h4>Dr. Sarah Williams</h4>
+            <p>Neurology</p>
+        </div>
+        <div class="doctor-card">
+            <h4>Dr. Michael Lee</h4>
+            <p>Orthopedics</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="footer-content">
+        <div>
+            <h4>CityCare Medical Center</h4>
+            <p>123 Health Avenue, City</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@citycaremedical.com</p>
+        </div>
+        <div>
+            <h4>Working Hours</h4>
+            <p>Monday – Friday: 8:00 AM – 8:00 PM</p>
+            <p>Emergency: 24/7</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Doctors</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2026 CityCare Medical Center. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>
